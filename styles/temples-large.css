@@ -27,7 +27,9 @@ header {
 }
 
 header p {
-    margin-left: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 header nav {
@@ -51,6 +53,11 @@ header nav ul li:hover {
     cursor: pointer;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-font-color);
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -69,4 +76,19 @@ main figure {
 
 main figure img {
     width: 15rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-font-color)
+}
+
+#menu {
+    display: none;
 }
