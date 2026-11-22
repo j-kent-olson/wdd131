@@ -17,15 +17,56 @@
     --secondary-font-color: rgb(255 255 255);
 }
 
+body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    min-height: 100vh;
+}
+
 header {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
     color: var(--secondary-font-color);
+    width: 100%;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    min-width: 500px;
+}
+
+main div {
+    background-color: color-mix(in srgb, var(--secondary-color) 40%, transparent);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-font-color)
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#data {
+    
+}
+
+#hero {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
